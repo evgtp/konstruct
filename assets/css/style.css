@@ -100,6 +100,17 @@ nav li:hover {
   cursor: pointer;
 }
 
+.icon_menu {
+  height: 65px;
+  width: 65px;
+  display: none;
+}
+
+.icon_menu img {
+  width: 100%;
+  height: 100%;
+}
+
 section {
   width: 100%;
 }
@@ -432,6 +443,41 @@ ul {
     position: absolute;
     left: 0;
     top: calc(30% + 250px);
+  }
+
+  nav {
+    padding-top: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  nav div {
+    width: calc(100% - 65px);
+  }
+
+  .icon_menu {
+    display: block;
+  }
+
+  .icon_menu:hover ~ ul {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+  }
+
+  nav li {
+    width: 100%;
+    height: 50px;
+    font-size: 26px;
+    line-height: 50px;
   }
 
   #about {
